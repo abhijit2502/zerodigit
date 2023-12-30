@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -13,9 +13,9 @@ export class HttpService {
 
   constructor(private http:HttpClient) { }
 
-getDataFromServer(endpoint:string){
+getDataFromServer(endpoint:string,params:HttpParams){
   const url=this.baseUrl+endpoint;
-  return this.http.get(url);
+  return this.http.get(url,{params:params});
 }
 
 

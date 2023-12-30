@@ -1,53 +1,73 @@
-<div class="container bg-img cursor">
+<div class=" w-100 cursor">
+  <div class="bg-img">
   <div class="col-md-6 p-4">
       <h2>Do the Digit Insurance</h2>
   </div>
-  <div class="container-fluid d-flex w-75 mt-2 p-2 shadow-sm">
-    <div class="container-fluid ">
-      <a>
-        <span><img src="https://previews.123rf.com/images/faysalfarhan/faysalfarhan1502/faysalfarhan150200994/36499676-car-icon-yellow-glossy-round-button.jpg"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="95px" width="65px"></span>
-        Car
-      </a>
-    </div>
-    <div class="container-fluid ">
-      <a>
-        <span><img src="https://cdn-icons-png.flaticon.com/512/5030/5030703.png"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="95px" width="65px"></span>
-        Bike
-      </a>
-    </div>
-    <div class="container-fluid">
-      <a>
-        <span><img src="https://cdn-icons-png.flaticon.com/512/5030/5030703.png"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="95px" width="65px"></span>
-        Car
-      </a>
-    </div>
-    <div class="container-fluid">
-      <a>
-        <span><img src="https://cdn-icons-png.flaticon.com/512/5030/5030703.png"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="95px" width="65px"></span>
-        Car
-      </a>
-    </div>
-    <div class="container-fluid">
-      <a>
-        <span><img src="https://cdn-icons-png.flaticon.com/512/5030/5030703.png"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="95px" width="65px"></span>
-        Car
-      </a>
-    </div>
-</div>
-<div class="container d-flex w-75 mt-2 p-2 shadow-sm">
-  <form>
-    <div class="container-fluid mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
+  <div class="row">
+    <div class="col-md-5 d-flex w-60 mt-2 p-2 ">
+      <div class="container-fluid ">
+        <a>
+          <span class="shadow-sm"><img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/car-side-view.svg"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="70px" width="70px"></span>
+          Car
+        </a>
+      </div>
+      <div class="container-fluid ">
+        <a>
+          <span class="shadow-sm"><img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/motorcycle-side-view.svg"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="70px" width="70px"></span>
+          Bike
+        </a>
+      </div>
+      <div class="container-fluid">
+        <a>
+          <span class="shadow-sm"><img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/health.svg"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="70px" width="70px"></span>
+          Health
+        </a>
+      </div>
+      <div class="container-fluid">
+        <a>
+          <span class="shadow-sm"><img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/Autorikshaw.svg"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="70px" width="70px"></span>
+          Commercial
+        </a>
+      </div>
+      <div class="container-fluid">
+        <a>
+          <span class="shadow-sm"><img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/travel-airplane.svg"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="70px" width="70px"></span>
+          Travel
+        </a>
+      </div>
+      <div class="container-fluid">
+        <a>
+          <span class="shadow-sm"><img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/more-icon.svg"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="70px" width="70px"></span>
+          More
+        </a>
+      </div>
+      <div class="container-fluid">
+        <a>
+          <span class="shadow-sm"><img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/Renew%20Icon.svg"  class="border border-warning rounded-circle d-flex text-center"  alt="" height="70px" width="70px"></span>
+          Renewals
+        </a>
+      </div>
+  </div>
+  </div>
+  
+<div class="d-flex w-100 mt-2 p-2 shadow-sm">
+    <div class="col-md-6  mb-3">
+      <label for="exampleInputEmail1" class="form-label">Registration Number</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
-    <div class="container-fluid mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
+    <div class="col-md-5  mb-3">
+      <label for="exampleInputPassword1" class="form-label">Mobile No</label>
       <input type="password" class="form-control" id="exampleInputPassword1">
     </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <div class="container-fluid mb-3 form-check">
+      <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+      <button type="submit" class="btn btn-primary-large mt-4 p-1" (click)="modal()">View Prices</button>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
 </div>
+</div>
+<div class="container-fluid mt-5">
+
+  <iframe src="https://www.youtube.com/embed/481eBtbu7VA" class="center" height="100%" width="100%" title="Iframe Example"></iframe>
+</div>
+<app-modal *ngIf="modal1"></app-modal>
