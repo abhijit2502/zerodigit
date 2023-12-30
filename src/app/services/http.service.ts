@@ -13,7 +13,7 @@ export class HttpService {
 
   constructor(private http:HttpClient) { }
 
-getDataFromServer(endpoint:string,params:HttpParams){
+getDataFromServer(endpoint:string,params?:HttpParams){
   const url=this.baseUrl+endpoint;
   return this.http.get(url,{params:params});
 }

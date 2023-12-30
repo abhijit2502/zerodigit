@@ -1,7 +1,62 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-9">
-        <h6>Choose Your Plan</h6>
+    <div class="row ">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-6 shadow-sm">
+            <h3 class="mt-1">
+                <i class="bi bi-arrow-left-circle"></i>
+                Choose Your Plan
+            </h3>
+            <div class="mt-2 border p-1  bg-color">
+                <span class="fw-bold">
+                    Claims
+                </span>|
+                <span class="ms-2 text-muted">Claim last year : <span class="fw-bold">No</span>|&nbsp;</span>
+                <span class="ms-2 text-muted">NCB last year : <span class="fw-bold">0%</span>|&nbsp;</span>
+                <button class="btn btn-warning ">Edit&nbsp;<i class="bi bi-pencil"></i></button>
+            </div>
+            <div class="mt-1 border p-1 owner-details ">
+                <div class="form-check form-switch ">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label " for="flexSwitchCheckDefault">Is the ownership transfered?</label>
+                </div>
+            </div>
+            <div class="d-flex mt-2 ">
+                <div class="card p-1 m-1" style="width: 14rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Comprehensive Cover</h5>
+                        <h2 class="card-subtitle fw-bold mb-2">₹1,209 /month</h2>
+                        <p class="card-text text-muted">Covers damage to your car and others for 1 year</p>
+                        <hr>
+                        <a href="#" class="card-link">Card link ></a>
+                    </div>
+                </div>
+                <div class="card p-1 m-1" style="width: 14rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">THIRD PARTY</h5>
+                        <h2 class="card-subtitle fw-bold mb-2 ">₹285 /month</h2>
+                        <p class="card-text text-muted">Only covers damage to others for 1 year</p>
+                        <hr class="mt-3 ">
+                        <a href="#" class="card-link">Card link ></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn border" (click)="openModal(template)">Coupon</button>
+                <ng-template #template>
+                    <div class="modal-header">
+                        <h4 class="modal-title pull-left">Modal</h4>
+                        <button type="button" class="btn-close close pull-right" aria-label="Close"
+                            (click)="modalRef?.hide()">
+                            <span aria-hidden="true" class="visually-hidden">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        This is a modal.
+                    </div>
+                </ng-template>
+            </div>
         </div>
         <div class="col-md-3">
 
