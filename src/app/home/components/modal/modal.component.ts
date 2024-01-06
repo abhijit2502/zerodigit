@@ -1,5 +1,5 @@
 import { HttpParams } from '@angular/common/http';
-import { Component, TemplateRef } from '@angular/core';
+import { Component, ElementRef, TemplateRef, ViewChild } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { HttpService } from 'src/app/services/http.service';
@@ -11,6 +11,12 @@ import { HttpService } from 'src/app/services/http.service';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent {
+  @ViewChild('btn')btn!:ElementRef
+  ngAfterViewInit(){
+    this.btn.nativeElement.click();
+  }
+
+
   modalRef?: BsModalRef;
   modalNames: any;
   varientNames: any;

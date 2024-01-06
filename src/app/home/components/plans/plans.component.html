@@ -43,7 +43,14 @@
                 </div>
             </div>
             <div>
-                <button type="button" class="btn border" (click)="openModal(template)">Coupon</button>
+                <div class="btnsize">
+                    <div class="border rounded text-center text-start p-2 m-2" (click)="openModal(template)" type="button">
+                        <span><img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/icons/discount-tag.png" height="32px" width="32px" alt=""></span>Coupon
+                        <div>
+                            Get upto 20% off
+                        </div>
+                    </div>
+                </div>
                 <ng-template #template>
                     <div class="modal-header">
                         <h4 class="modal-title pull-left">Modal</h4>
@@ -53,13 +60,16 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        This is a modal.
+                        <h1 class="fw-bold">1 offer for you</h1>
                     </div>
                 </ng-template>
             </div>
+            <div class="border rounded ">
+                <h4 class="text-start fw-bold p-2 m-2">IDV (Insured Value)</h4>
+            </div>
         </div>
-        <div class="col-md-3">
-
+        <div class="col-md-3 d-flex">
+         
         </div>
     </div>
 </div>

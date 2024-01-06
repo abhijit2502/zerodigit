@@ -1,5 +1,5 @@
 <div class="container cursor">
-    <button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
+    <button #btn type="button" class="btn btn-primary d-none" (click)="openModal(template)">Create template modal</button>
  
     <ng-template #template>
         <div class="modal-header">
